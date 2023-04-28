@@ -1,0 +1,68 @@
+<template>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-responsive">
+      <thead class="table-header-left" id="sorting-selector">
+        <tr>
+          <th>
+            <button
+              id="header-id"
+              class="btn btn-link text-dark"
+              type="button"
+              data-sort-by="id"
+            >
+              Id
+            </button>
+          </th>
+          <th>
+            <button
+              id="header-brand"
+              class="btn btn-link text-dark"
+              type="button"
+              data-sort-by="brand"
+            >
+              Brand
+            </button>
+          </th>
+          <th>
+            <button
+              id="header-model"
+              class="btn btn-link text-dark"
+              type="button"
+              data-sort-by="model"
+            >
+              Model
+            </button>
+          </th>
+          <th>
+            <button
+              id="header-color"
+              class="btn btn-link text-dark"
+              type="button"
+              data-sort-by="color"
+            >
+              Color
+            </button>
+          </th>
+          <th>
+            <button
+              id="header-kilometers"
+              class="btn btn-link text-dark"
+              type="button"
+              data-sort-by="kilometers"
+            >
+              Kilometers
+            </button>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <ul
+    id="car-paginator"
+    class="pagination pagination-sm justify-content-center"
+    style="margin-top: 10px"
+  ></ul>
+  <p id="error" style="color: red"></p>
+</template>
